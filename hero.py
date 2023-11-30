@@ -2,23 +2,20 @@
 import json
 import os
 
-class Hero():        
+with open("data.json", "r") as f:
+    # Serialize the updated Python list to a JSON string
+    data = json.load(f)
+
+class hero():        
     def _init_(self, name, health, damage):
         self.name = name
         self.health = health
         self,damage = damage
+        cla ={"name":name, "size":size,  "color":color, "weight":weight}
+        return(cla)
 
 
-class H (Hero):
-    def create (self):
-        name = ("Cornelius")
-        health = ("200 hp")
-        damage = ("30 dmg")
-        return(name, health, damage)
-with open("data.json", "r") as f:
-    # Serialize the updated Python list to a JSON string
-    data = json.load(f)
-x = Hero()
+x = hero()
 x1 = x.create()
 data.append(x1)
 #No code needed below this line
