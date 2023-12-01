@@ -9,6 +9,8 @@ class Zombie():
         poop={"name":name, "health":health, "damage":damage}
         return(poop)
     
+BZ= ("Baby Zombie",100, 5)
+
 
 with open("data.json", "r") as f:
     data = json.load(f)
