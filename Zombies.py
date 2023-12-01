@@ -2,14 +2,12 @@ import json
 import os
 
 class Zombie():
-    def __init__(self, name, health, damage):
-        self.name=name
-        self.health=health
-        self.damage=damage
+    def create(self):
+        name= input("Enter name: ")
+        health= input("Enter health: ")
+        damage= input("Enter damage: ")
         poop={"name":name, "health":health, "damage":damage}
         return(poop)
-    
-BZ= ("Baby Zombie",100, 5)
 
 
 with open("data.json", "r") as f:
