@@ -15,13 +15,4 @@ Woods_Start()
 
 
 
-Ans =  ["Piano", "a piano"]
-def Path1 (): 
 
-    print (" Once you look at their information, you take you and your weapon (sword) into battle. To win this battle you must answer the following question:")
-
-    riddle = input("I'm full of keys, but I cannot open a door, what am i? ")
-    if riddle in Ans:
-        print ("You are right! You won the battle against the baby zombie! Lets keep going!")
-    if riddle is not Ans: 
-        print ("Oh no! You died! D:")
