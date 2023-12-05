@@ -1,15 +1,17 @@
-
+import random
 ## Create  Class for creating new dictionaries here
 class Hero():
-    def create (self):
-        name = ("117")
-        health = 200
-        damage = 15
-        cla ={"name":name, "damage":damage,  "health":health}
-        return(cla)
+    def _init_(self,x,y,coins,weapon)
+        self.x=x
+        self.y=y
+        self.coins=coins
+        self.weapon=weapon
+    def attack(self)
+        if self.weapon
+            return random.randint(1, self.weapon.damage)
+        else:
+
+
         
 
         
-x = Hero()
-x1 = x.create()
-
