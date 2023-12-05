@@ -1,9 +1,9 @@
 class Merchant:
-    def __init__(self,name,products): 
+    def __init__(self,name,coins,inventory): 
         self.name = name 
-        self.products = products 
+        self.coins= coins
+        self.inventory = inventory
     def sell(self,item): 
-        self.products.remove(item)
+        self.items.remove(item)
         print (f'you have purchased {item}') 
-        print (self.products) 
-        
+        print (self.items) 

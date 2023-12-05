@@ -1,32 +1,14 @@
 def storyline():
-    a = input("Welcome to *Game Title*!! Lets begin. Press Enter to Continue")
-    start = input("You are walking in the woods, trying to find a specific plant and you come across 2 paths going opposite directions; left and right.")
+    a = input("Welcome to *Game Title*!! Lets begin. Press Enter to Continue") 
+    b = input("Hello! You are a student in Staten Island Technical High School and you are attempting to survive the zombie apocalypse.")
+    c = input ("The goal is to get to Staten Island Techincal high School's roof, where the rescue point is. You will start in Level 1, Brooklyn, NY. Try to get to Staten Island the best way possible. Be careful!")
+    start = input("You wake up from your bed in Brooklyn after hearing a blood chilling shriek! You can either check out the sound, or stay in your room. What do you pick?")
+    BeginningA = ["Check out the sound"]
+    BeginningB = ["Stay in your room, and hide"]
+    if start in BeginningA:
+         print ("You mama")
+    elif start in BeginningB:
+         print("your papa")
 
-class Name:
-    def __init__(self, name): 
-        self.name = name 
 
-
-    def user(self): 
-        print ("Hey, {}!".format(self.name))
-
-class Personal(Name): 
-    pass 
-
-person = Personal(input("What is your name?")) 
-person.user() 
-
-import time 
-
-Path1 = ["Left","left","l"]
-
-Path2 = ["Right","right","r"]
-
-print ("You are walking in the woods trying to find a specific plant. You come across two paths going in opposite directions") 
-def Woods_Start(): 
-    request = input("Which way do you want to go? Left or Right?") 
-    if request in Path1: 
-        print("As you continue walking down the road, you hear a weird sound. Is that...a snarl? A growl? Maybe it's a bear, or a raccoon but something hops out of the bushes. Something much worse than you expected. What do you do now??")
-    if request in Path2: 
-        print("You found your way home. Game over")
-Woods_Start() 
+storyline() 
