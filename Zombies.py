@@ -2,10 +2,10 @@ import json
 import os
 
 class Zombie():
-    def create(self):
-        name= input("Enter name: ")
-        health= input("Enter health: ")
-        damage= input("Enter damage: ")
+    def __init__(self,name,health,damage):
+        self.name=name
+        self.health=health
+        self.damage=damage
         lo={"name":name, "health":health, "damage":damage}
         return(lo)
 

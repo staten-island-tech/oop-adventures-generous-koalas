@@ -13,5 +13,25 @@
         "name": "Mama Zombie",
         "health": "250",
         "damage": "20"
+    },
+    {
+        "name": "moo",
+        "health": "moo",
+        "damage": "moo"
+    },
+    {
+        "name": "Cornelius",
+        "health": "200",
+        "damage": "15"
+    },
+    {
+        "name": "Cornelius",
+        "health": "200",
+        "damage": "15"
+    },
+    {
+        "name": "Cornelius",
+        "health": "200",
+        "damage": "15"
     }
 ]

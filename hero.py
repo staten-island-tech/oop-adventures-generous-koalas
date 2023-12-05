@@ -1,11 +1,16 @@
-class Hero():
-    def create(self):
-        name=("Maroon")
-        health=200
-        damage=15
-        moo={"name":name, "health":health, "damage":damage}
-        return(moo)
+import random
 
-b= Hero()
-b1=b.create()
+class Hero():
+    def __init__(self,health,damage,x,y,coins,weapon=None):
+        self.health=health
+        self.damage=damage
+        self.x=x
+        self.y=y
+        self.coins=coins
+        self.weapon=weapon
+    def attack(self):
+        if self.weapon:
+            return random.randidnt(1,self.weapon.damage)
+        else:
+            return 1
 
