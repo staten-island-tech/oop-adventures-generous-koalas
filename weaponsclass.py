@@ -1,16 +1,42 @@
-class Weapons(): 
-    def create (self):
-        name = self.name 
-        damage = self.damage 
-        accuracy = self.accuracy
-        weaponrange = self.weaponrange 
+class Weapons:
+    def __init__(self,name,damage,weaporange,):
+        self.name = name 
+        self.damage = damage
+        self.range = weaporange
+    def weaponry(self,name):
+        self.names.append(name) 
+        print (f'you now have {name}')
+        print (self.names) 
 
-        weaponry = {"name": name, "damage rate": damage, "accuracy": accuracy, "range": weaponrange}
-        return (weaponry) 
+
     
 
-x = Weapons() 
-x1 = x.create()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

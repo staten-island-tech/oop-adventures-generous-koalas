@@ -7,3 +7,6 @@ class Merchant:
         self.items.remove(item)
         print (f'you have purchased {item}') 
         print (self.items) 
+
+import json 
+
