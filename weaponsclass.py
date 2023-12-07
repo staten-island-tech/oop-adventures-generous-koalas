@@ -1,45 +1,9 @@
 class Weapons:
-    def __init__(self,name,damage,weaporange,):
+    def __init__(self,name,damage,weaporange,inventory):
         self.name = name 
         self.damage = damage
         self.range = weaporange
-    def weaponry(self,name):
-        self.names.append(name) 
-        print (f'you now have {name}')
-        print (self.names) 
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        self.inventory = inventory
+    def gain (self, item): 
+        self.inventory.append(item)
+        print (self.inventory)
