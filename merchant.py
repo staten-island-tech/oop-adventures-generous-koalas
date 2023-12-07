@@ -1,23 +1,26 @@
 import random
 from hero import Hero
-class Potion:
-    def _init_ (self, name, effect):
-        self.name = name
-        self.effect = effect
 class Merchant:
-    def _init_(self,available_items):
-        self.available_items=available_items
-    def buy(self, Hero):
-        item = random.choice(items)
-        items = ["Health Potion", "Damage Potion"]
+    def _init_(self,gold):
+        self.gold = gold
 
-        if item == "Health Potion":
-            Potion = random.choice(self.available_items)
-            print(f"Merchant: Welcome adventurer! I have some items for sale: {item}")
+    def buy_health_potion(self):
+        if self.gold >= 25:
+            self.gold -= 25
+            return 50
+        else:
+            print("Not enough gold")
+            return 0 
+    def buy_damage_potion(self):
+        if self.gold>= 25:
+            self.gold -= 25
+            return 5
+        else: 
+            print("Not enough gold")
+            return 0 
 
-        if response == 'Yes':
-            if item == "Health Potion":
-                Hero.items = items
-            else: 
+starting_gold = 20
+
+Merchant = Merchant(starting_gold)
 
 
