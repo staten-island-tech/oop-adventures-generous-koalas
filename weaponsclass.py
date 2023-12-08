@@ -1,9 +1,12 @@
 class Weapons:
-    def __init__(self,name,damage,weaporange,inventory):
+    def __init__(self,name,damage,coins):
         self.name = name 
         self.damage = damage
-        self.range = weaporange
-        self.inventory = inventory
-    def gain (self, item): 
-        self.inventory.append(item)
-        print (self.inventory)
+Troika = Weapons("Troika", )
+Dull_Pencil = Weapons("Dull Pencil", 16)
+Sharpened_Pencil = Weapons("Sharpened Pencil", 25)
+Safety_Scissors = Weapons("Safety Scissors",)
+Opened_Paperclip = 
+Heavy_Backpack = 
+
+
