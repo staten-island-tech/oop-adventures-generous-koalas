@@ -61,8 +61,10 @@ def fight():
                 time.sleep(1.5)
                 print("The zombie's health is",zombie_health)
                 time.sleep(1.5)
-            elif random.choice(op4) == ("Your potion fell out of your hands atleast you man…"):
+            elif random.choice(op3) == ("Your damage potion fell out of your hands atleast …"):
                 print("Your damage potion fell out of your hands atleast you managed to dodge the zombie's attack....")
+                zombie_health=zombie_health
+                hero_health=hero_health
                 time.sleep(1.5)
                 print("Your health is....",hero_health)
                 time.sleep(1.5)   
