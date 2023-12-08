@@ -19,6 +19,7 @@ op5=("Fight","fight","f","F","FIGHT")
 def fight():
     fstart
     movedesc
+    coins=random.randint(23,31)
     zombie_health=200
     hero_health=200
     while hero_health>0:
@@ -89,6 +90,7 @@ def fight():
         if zombie_health<0:
             print("HERO WINS.")
             time.sleep(1.5)
+            print (f"You got {coins} from defeating this zombie!")
         
         if hero_health==0:
             print("You've died...")
