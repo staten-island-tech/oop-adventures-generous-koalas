@@ -11,9 +11,9 @@ class HealthPotion(Potion):
         self.healing = healing
 
 class DamagePotion(Potion):
-    def __init__(self, name, damage, cost):
+    def __init__(self, name, damagee, cost):
         super().__init__(name, cost)
-        self.damage = damage
+        self.damage = damagee
 
 class Hero:
     def __init__(self, name, health, coins, damage):
@@ -36,8 +36,8 @@ class Hero:
     def use_damage_potion(self):
         if self.inventory['damage_potions']:
             potion = self.inventory['damage_potions'].pop()
-            self.damage += potion.damage
-            print(f"{self.name} used {potion.name}. Damage boosted by {potion.damage}.")
+            self.damagee += potion.damagee
+            print(f"{self.name} used {potion.name}. Damage boosted by {potion.damagee}.")
         else:
             print("No damage potions in inventory.")
 
@@ -47,7 +47,7 @@ def earn_currency(self, amount):
         self.currency += amount
         print(f"{self.name} earned {amount} coins!")
 
-    
+
 
 
 
@@ -62,7 +62,7 @@ class Merchant:
             if isinstance(item, HealthPotion):
                 print(f"{idx}. {item.name} - Healing: {item.healing} - Cost: {item.cost} coins")
             elif isinstance(item, DamagePotion):
-                print(f"{idx}. {item.name} - Damage Boost: {item.damage} - Cost: {item.cost} coins")
+                print(f"{idx}. {item.name} - Damage Boost: {item.damagee} - Cost: {item.cost} coins")
             else:
                 print(f"{idx}. {item}")
 
@@ -94,6 +94,5 @@ class Merchant:
 hero = Hero(name="John", health=200, coins=50, damage=15)
 merchant = Merchant(available_items=[
     HealthPotion(name="Health Potion", healing=5, cost=25),
-    DamagePotion(name="Damage Potion", damage_boost=2, cost=25),
-    "Speed Upgrade"
+    DamagePotion(name="Damage Potion", damagee=30, cost=25),
 ])
