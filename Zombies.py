@@ -1,7 +1,7 @@
 import json
 import os
 
-class Zombie():
+class Enemy():
     def __init__(self,name,health,damage):
         self.name=name
         self.health=health
@@ -14,7 +14,7 @@ with open("data.json", "r") as f:
     # Serialize the updated Python list to a JSON string
     data = json.load(f)
 
-a= Zombie()
+a= Enemy()
 a1=a.create()
 data.append(a1)
 
