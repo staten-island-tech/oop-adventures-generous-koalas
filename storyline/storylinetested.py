@@ -9,4 +9,6 @@ def start():
          print ("What do you do in the SO Store?")
     elif start in BeginningB:
          print("You walk in and realize that no one is in the room")
-start()
+         class CompSCi(): 
+              
+# make a class that represents the so store, and the choices they can make. 
