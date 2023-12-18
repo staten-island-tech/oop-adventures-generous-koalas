@@ -1,6 +1,8 @@
 from hero import Hero
 from Zombies import Enemy
-from beans import poopoo
+from beans import Poopoo
+from beans import peepee
 
-Maroon=Hero(name="Maroon",health=200, damage=15,coins=20)
-zombies= Enemy(name="Zombie",health=200,damage=10)
+print (peepee)
+
+Poopoo()

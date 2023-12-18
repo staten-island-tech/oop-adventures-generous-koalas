@@ -1,7 +1,19 @@
 import random
 import time
-from hero import Hero
-from Zombies import Enemy
+
+class Hero():
+    def __init__(self,name, health,damage,coins):
+        self.name=name
+        self.health=health
+        self.damage=damage
+        self.coins=coins
+
+class Enemy():
+    def __init__(self, name, health,damage,):
+        self.name=name
+        self.health=health
+        self.damage=damage
+    
 
 y=("yes","yeah","y","Y","YES","Yes")
 n=("no","nah","n","N","NO","No")
@@ -17,7 +29,11 @@ op3=("You used your damage potion! The zombie's hp dropped by 30!","Your damage 
 op4=("You used your healing potion! +40 hp","Your potion fell out of your hands atleast you managed to dodge the zombie's attack....")
 op5=("Fight","fight","f","F","FIGHT")
 
-class poopoo():
+def peepee():
+    Maroon=Hero(name="Maroon",health=200, damage=15,coins=20)
+    zombies= Enemy(name="Zombie",health=200,damage=10)
+
+class Poopoo():
     def fight():
         fstart
         movedesc
@@ -111,7 +127,7 @@ class poopoo():
                 time.sleep(1.5)
                 fight_again= input("-------\nWould you like to battle again or go to the shop?\n'Fight' to try again.)")
                 if fight_again in op5:
-                    return (poopoo())
+                    return (Poopoo())
             
         else:
             print ("Invalid option... Enter again: ")
