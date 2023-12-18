@@ -17,7 +17,7 @@ op3=("You used your damage potion! The zombie's hp dropped by 30!","Your damage 
 op4=("You used your healing potion! +40 hp","Your potion fell out of your hands atleast you managed to dodge the zombie's attack....")
 op5=("Fight","fight","f","F","FIGHT")
 
-class Fight():
+class poopoo():
     def fight():
         fstart
         movedesc
@@ -25,8 +25,8 @@ class Fight():
         zdmg=Enemy.damage
         pdmg=30
         v=time.sleep(1.5)
-        Enemy.health
-        Hero.health
+        Enemy.health=Enemy.health
+        Hero.health=Hero.health
         while Hero.health>0:
             moveset=input ("-------\n1) Charged Attack, \n2) Normal Attack, \n3) Damage Potion,\n4)Healing Potion\n Enter the corresponding number:  ")
             if moveset== "1":
@@ -62,13 +62,13 @@ class Fight():
             elif moveset=="3":
                 if random.choice(op3) == ("You used your damage potion! The zombie's hp dropp…"):
                     print("Nice!The zombie's hp dropped by 30!")
-                    Hero.health=Hero.health-pdmg
+                    Enemy.health=Enemy.health-pdmg
                     time.sleep(1.5)
                     print("The zombie's health is",Enemy.health)
                     time.sleep(1.5)
                 elif random.choice(op3) == ("Your damage potion fell out of your hands atleast …"):
                     print("Your damage potion fell out of your hands atleast you managed to dodge the zombie's attack....")
-                    Hero.health=Enemy.health
+                    Enemy.health=Enemy.health
                     Hero.health=Hero.health
                     time.sleep(1.5)
                     print("Your health is....",Hero.health)
@@ -111,16 +111,12 @@ class Fight():
                 time.sleep(1.5)
                 fight_again= input("-------\nWould you like to battle again or go to the shop?\n'Fight' to try again.)")
                 if fight_again in op5:
-                    return (Fight())
+                    return (poopoo())
             
         else:
-            print ("You didn't choose an option... Enter again: ")
+            print ("Invalid option... Enter again: ")
             still_continue =input("What attack do you want to use?")
             moveset=still_continue
-    print
+        print
 
-    
-def main():
-    Maroon=Hero(name="Maroon",health=200, damage=15,coins=20)
-    zombies= [Enemy(name="Zombie",health=200,damage=10,reward=25)]
-    Fight()
+
