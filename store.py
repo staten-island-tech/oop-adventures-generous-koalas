@@ -1,3 +1,4 @@
+
 from hero import Hero
 
 class Merchant:
