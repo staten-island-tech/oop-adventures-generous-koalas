@@ -1,5 +1,3 @@
-import json
-import os
 
 class Enemyz():
     def __init__(self,name,health,damage):

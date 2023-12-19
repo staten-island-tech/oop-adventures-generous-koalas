@@ -20,6 +20,7 @@ op3=("You used your damage potion! The zombie's hp dropped by 30!","Your damage 
 op4=("You used your healing potion! +40 hp","Your potion fell out of your hands atleast you managed to dodge the zombie's attack....")
 op5=("Fight","fight","f","F","FIGHT")
 
+
 class Fight():
     def fight():
         fstart
