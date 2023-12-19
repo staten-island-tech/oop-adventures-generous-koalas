@@ -4,4 +4,4 @@ def SchoolStore():
     z = input("You start rummaging through the pantry, looking for your favorite candy")
     zombie1 = input("After you found your snack, and go back to the main room, you realize the door is slightly opened...uh oh") 
     
-SchoolStore()
+SchoolStore() 
