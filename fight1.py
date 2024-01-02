@@ -14,15 +14,14 @@ class Enemy():
         self.health=health
         self.damage=damage
     
-
 y=("yes","yeah","y","Y","YES","Yes")
 n=("no","nah","n","N","NO","No")
 #Get classes in here,
 #figure out how to determine whether the user has potions to use during the moves which will also determine how many the times they can use the move (for potions)
 #need a certain multiplier for each attack and certain damages per weapons
 
-fstart= ("You encounter a Zombie. FIGHT START.")
-movedesc=("1)Charged attack.[2x your normal damage, 1/2 recoil],2)normal attack[normal damage, no recoil], 3)damage potion[+30 damage], 4)health potion[+40 health]")
+fstart= ("you must defeat the baby zombie to continue. Fight --> START")
+movedesc=("1)Charged attack.[2x your normal damage, 1/2 recoil], 2)normal attack[normal damage, no recoil], 3)damage potion[+30 damage], 4)health potion[+40 health]")
 op1=("Good job! The zombie's hp dropped by 30, that hit hurt... -15 hp","You missed and the zombie attacked twice!!-20hp")
 op2=("Nice!The zombie's hp dropped by 15!","You missed... the zombie bit you! -10hp")
 op3=("You used your damage potion! The zombie's hp dropped by 30!","Your damage potion fell out of your hands atleast you managed to dodge the zombie's attack....")
@@ -31,7 +30,7 @@ op5=("Fight","fight","f","F","FIGHT")
 
 
 
-class p():
+class p1():
     def fight():
         print (fstart)
         print (movedesc)
@@ -74,13 +73,13 @@ class p():
                     v  
 
             elif moveset=="3":
-                if random.choice(op3) == ("You used your damage potion! The zombie's hp dropp…"):
+                if random.choice(op3) == ("You used your damage potion! The zombie's hp dropped by 30!"):
                     print("Nice!The zombie's hp dropped by 30!")
                     D.health=D.health-pdmg
                     v
                     print("The zombie's health is",D.health)
                     v
-                elif random.choice(op3) == ("Your damage potion fell out of your hands atleast …"):
+                elif random.choice(op3) == ("Your damage potion fell out of your hands atleast you managed to dodge the zombie's attack...."):
                     print("Your damage potion fell out of your hands atleast you managed to dodge the zombie's attack....")
                     D.health=D.health
                     F.health=F.health
@@ -97,40 +96,12 @@ class p():
                     v
                     print("Your health is..",F.health)
                     v
-                elif random.choice(op4) == ("Your potion fell out of your hands atleast you man…"):
+                elif random.choice(op4) == ("Your potion fell out of your hands atleast you managed to dodge the zombie's attack...."):
                     print("Your potion fell out of your hands atleast you managed to dodge the zombie's attack....")
+                    F.health=F.health
+                    D.health=D.health
                     v
                     print("Your health is....",F.health)
                     v  
                     print("The zombie's health is",D.health)
-
-            if D.health==0:
-                print("The Zombie died...")
-                break
-
-            if D.health<0:
-                print("HERO WINS.")
-                v
-                print ("You got 25 coins from defeating this zombie!")
-                F.coins+25
-                print (F.coins)
-
-            if F.health==0:
-                print("You've died...")
-                break
-                    
-            if F.health<0:
-                print("ZOMBIE WINS.")
-                v
-                fight_again= input("-------\nWould you like to battle again or go to the shop?\n'Fight' to try again.)")
-                if fight_again in op5:
-                    return
-                
-        else:
-            print ("Invalid option... Enter again: ")
-            still_continue =input("What attack do you want to use?")
-            moveset=still_continue
-        print
-
-
-p.fight()
+    fight()
