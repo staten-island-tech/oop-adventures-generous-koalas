@@ -62,3 +62,5 @@ class Game():
                     print("Your health is....",F.health)
                     v  
                     print("The zombie's health is",D.health)
+
+Game.movement(2)

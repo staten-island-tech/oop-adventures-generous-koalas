@@ -20,15 +20,18 @@ n=("no","nah","n","N","NO","No")
 #figure out how to determine whether the user has potions to use during the moves which will also determine how many the times they can use the move (for potions)
 #need a certain multiplier for each attack and certain damages per weapons
 
-fstart= ("you must defeat the baby zombie to continue. Fight --> START")
-movedesc=("1)Charged attack.[2x your normal damage, 1/2 recoil], 2)normal attack[normal damage, no recoil], 3)damage potion[+30 damage], 4)health potion[+40 health]")
+fstart= ("This is a baby zombie. To continue the game, you must fight them ALL. This is level 1: Baby Zombie. Fight --> START")
+movedesc=("1)Charged attack.[twice your normal damage, 1/2 recoil], 2)normal attack [normal damage, no recoil], 3) damage potion[+30 damage], 4)health potion[+40 health]")
 op1=("Good job! The zombie's hp dropped by 30, that hit hurt... -15 hp","You missed and the zombie attacked twice!!-20hp")
 op2=("Nice!The zombie's hp dropped by 15!","You missed... the zombie bit you! -10hp")
 op3=("You used your damage potion! The zombie's hp dropped by 30!","Your damage potion fell out of your hands atleast you managed to dodge the zombie's attack....")
 op4=("You used your healing potion! +40 hp","Your potion fell out of your hands atleast you managed to dodge the zombie's attack....")
 op5=("Fight","fight","f","F","FIGHT")
-
-
+HEALTH = input("Would you like to look at your information before beginning? Type YES or NO")
+if HEALTH == "YES": 
+    print("Health = 200, Damage = 15, Coins = 20")
+if HEALTH == "NO":
+    print("lets continue!")
 
 class p1():
     def fight():
