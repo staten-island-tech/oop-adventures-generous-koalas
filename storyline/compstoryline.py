@@ -7,10 +7,7 @@ that = ["go to the back", "back of the room","emma watson room","go to back","go
 if thisorthat in this:
       import af
 elif thisorthat in this: 
-      print("You walk around the back and realized everything is destroyed and on the floor, scattered. What happened here? ")
-      
+     import ap2
 else:
-      print("Dude, you're leaving the room?? Why")
-      
-
-
+      print("Im sorry but you are leaving the room...let's go to the store!")
+      import schoolstore

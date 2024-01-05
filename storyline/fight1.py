@@ -20,7 +20,7 @@ n=("no","nah","n","N","NO","No")
 #figure out how to determine whether the user has potions to use during the moves which will also determine how many the times they can use the move (for potions)
 #need a certain multiplier for each attack and certain damages per weapons
 
-fstart= ("This is a baby zombie. To continue the game, you must fight them ALL. This is level 1: Baby Zombie. Fight --> START")
+fstart= ("The baby zombie lunges at you, ready to attack. This is level 1: Baby Zombie. Fight --> START")
 movedesc=("1)Charged attack.[twice your normal damage, 1/2 recoil], 2)normal attack [normal damage, no recoil], 3) damage potion[+30 damage], 4)health potion[+40 health]")
 op1=("Good job! The zombie's hp dropped by 30, that hit hurt... -15 hp","You missed and the zombie attacked twice!!-20hp")
 op2=("Nice!The zombie's hp dropped by 15!","You missed... the zombie bit you! -10hp")

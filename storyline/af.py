@@ -8,5 +8,5 @@ def checkcode():
             import fight1
         if gr == "NO":
             print("you decided to hide, going under the desk. looking in front of you, you see a dark green, skeleton like figure. It bends down and finds you, growling at your face, looking hungrier than ever. ")
-checkcode()
-        
+            import fight1
+checkcode() 
