@@ -107,4 +107,26 @@ class p1():
                     print("Your health is....",F.health)
                     v  
                     print("The zombie's health is",D.health)
+
+            if D.health==0:
+                print("The Zombie died...")
+                break
+
+            if D.health<0:
+                print("HERO WINS.")
+                v
+                print ("You got 15 coins from defeating this zombie!")
+                F.coins+15
+                print (F.coins)
+
+            if F.health==0:
+                print("You've died...")
+                break
+                    
+            if F.health<0:
+                print("ZOMBIE WINS.")
+                v
+                fight_again= input("-------\nWould you like to battle again or go to the shop?\n'Fight' to try again.)")
+                if fight_again in op5:
+                    return
     fight()

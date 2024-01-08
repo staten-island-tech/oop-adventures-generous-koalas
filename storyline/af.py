@@ -1,4 +1,5 @@
-def checkcode(): 
+class compsci1():
+    def checkcode(): 
         print("You find your computer and sit down, turning your compuer on. But it is not turning on.")
         print("you stand up, checking the motherboard. Press any key to check.")
         b = input("as you tilt your head, you realize the cord is not only unplugged but it seems like it was ...chewed off?? Press any key to continue")
@@ -9,4 +10,5 @@ def checkcode():
         if gr == "NO":
             print("you decided to hide, going under the desk. looking in front of you, you see a dark green, skeleton like figure. It bends down and finds you, growling at your face, looking hungrier than ever. ")
             import fight1
-checkcode() 
+    checkcode()
+    

@@ -32,3 +32,9 @@ LandYard = Weapons("Land Yard", 12, 30)
 Masks = Weapons ("Masks", 15, 40) 
 
 HairClip = Weapons("Hair Clip", 20, 50) 
+
+RetiredFlute = Weapons ("Retired Flute", 25, 55)
+
+RetiredTrombone = Weapons ("Retired Trombone", 30, 60) 
+
+RetiredViolinBow = Weapons ("Retired Violin Bow", 45, 70)
