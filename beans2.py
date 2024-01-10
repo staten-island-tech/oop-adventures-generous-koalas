@@ -32,13 +32,12 @@ class p3():
         print (movedesc)
         F=Hero("Blastoise",200,15,20)
         D=Enemy("Mama Zombie",250,20)
-        print (F.name)
-        print ("Fight commence.")
+        print ("Fight commence. Get ready", F.name)
         dmg=F.damage
         zdmg=D.damage
         pdmg=30
         v=time.sleep(1.5)
-        while F.health>0:
+        while F.health>0 and D.health>0:
             moveset=input ("-------\n1) Charged Attack, \n2) Normal Attack, \n3) Damage Potion,\n4)Healing Potion\n Enter the corresponding number:  ")
             if moveset== "1":
                 n = random.randint(1, 2)
