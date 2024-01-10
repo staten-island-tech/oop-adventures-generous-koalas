@@ -43,7 +43,7 @@ class p1():
         zdmg=D.damage
         pdmg=30
         v=time.sleep(1.5)
-        while F.health>0:
+        while F.health>0 and D.health>0:
             moveset=input ("-------\n1) Charged Attack, \n2) Normal Attack, \n3) Damage Potion,\n4)Healing Potion\n Enter the corresponding number:  ")
             if moveset== "1":
                 n = random.randint(1, 2)
@@ -107,26 +107,19 @@ class p1():
                     print("Your health is....",F.health)
                     v  
                     print("The zombie's health is",D.health)
-
-            if D.health==0:
-                print("The Zombie died...")
-                break
-
-            if D.health<0:
-                print("HERO WINS.")
-                v
-                print ("You got 15 coins from defeating this zombie!")
-                F.coins+15
-                print (F.coins)
-
-            if F.health==0:
-                print("You've died...")
-                break
                     
-            if F.health<0:
-                print("ZOMBIE WINS.")
-                v
-                fight_again= input("-------\nWould you like to battle again or go to the shop?\n'Fight' to try again.)")
-                if fight_again in op5:
-                    return
+            if D.health<=0:
+                    print("The Zombie died...")
+                    print("YOU WIN.")
+                    v
+                    print ("You got 15 coins from defeating this zombie!")
+                    F.coins+15
+                    print("you now have"(F.coins))
+            if F.health<=0:
+                    print("You've died...")
+                    print("ZOMBIE WINS.")
+                    break
+            fight_again= input("-------\nWould you like to battle again or go to the shop?\n'Fight' to try again.)")
+            if fight_again in op5:
+                return
     fight()
