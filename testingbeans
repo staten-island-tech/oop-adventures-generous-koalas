@@ -28,7 +28,7 @@ op1=("Good job! The zombie's hp dropped by 30, that hit hurt... -15 hp","You mis
 op2=("Nice!The zombie's hp dropped by 15!","You missed... the zombie bit you! -10hp")
 op3=("You used your damage potion! The zombie's hp dropped by 30!","Your damage potion fell out of your hands atleast you managed to dodge the zombie's attack....")
 op4=("You used your healing potion! +40 hp","Your potion fell out of your hands atleast you managed to dodge the zombie's attack....")
-op5=("Fight","fight","f","F","FIGHT")
+op5=("Fight")
 
 
 
@@ -130,7 +130,10 @@ class p1():
                 print("ZOMBIE WINS.")
                 v
                 fight_again= input("-------\nWould you like to battle again or go to the shop?\n'Fight' to try again.)")
-                if fight_again in op5:
-                    return
+                if op5 in fight_again:
+                    return (p1)
+                else:
+                    if op5 not in fight_again:
+                        print ("Invalid.")
 
 p1.fight()
