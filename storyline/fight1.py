@@ -91,7 +91,6 @@ class p1():
                     v  
                     print("The zombie's health is",D.health)
                     v
-
             elif moveset=="4":
                 if random.choice(op4) == ("You used your healing potion! +40 hp"):
                     print("You used your healing potion! +40p!")
@@ -107,19 +106,19 @@ class p1():
                     print("Your health is....",F.health)
                     v  
                     print("The zombie's health is",D.health)
-                    
             if D.health<=0:
                     print("The Zombie died...")
                     print("YOU WIN.")
                     v
                     print ("You got 15 coins from defeating this zombie!")
+                    t = F.coins+15
                     F.coins+15
-                    print("you now have"(F.coins))
+                    print (t)
             if F.health<=0:
                     print("You've died...")
                     print("ZOMBIE WINS.")
                     break
-            fight_again= input("-------\nWould you like to battle again or go to the shop?\n'Fight' to try again.)")
-            if fight_again in op5:
-                return
+            repquest = input("Would you like to try again?")
+            if repquest in op5: 
+                    return
     fight()
