@@ -26,7 +26,6 @@ op1=("Good job! The zombie's hp dropped by 30, that hit hurt... -15 hp","You mis
 op2=("Nice!The zombie's hp dropped by 15!","You missed... the zombie bit you! -10hp")
 op3=("You used your damage potion! The zombie's hp dropped by 30!","Your damage potion fell out of your hands atleast you managed to dodge the zombie's attack....")
 op4=("You used your healing potion! +40 hp","Your potion fell out of your hands atleast you managed to dodge the zombie's attack....")
-op5=("Fight","fight","f","F","FIGHT")
 HEALTH = input("Would you like to look at your information before beginning? Type YES or NO")
 if HEALTH == "YES": 
     print("Health = 200, Damage = 15, Coins = 20")
@@ -106,6 +105,7 @@ class p1():
                     print("Your health is....",F.health)
                     v  
                     print("The zombie's health is",D.health)
+
             if D.health<=0:
                     print("The Zombie died...")
                     print("YOU WIN.")
@@ -114,11 +114,19 @@ class p1():
                     t = F.coins+15
                     F.coins+15
                     print (t)
-            if F.health<=0:
+            if F.health<0:
                     print("You've died...")
                     print("ZOMBIE WINS.")
-                    break
-            repquest = input("Would you like to try again?")
-            if repquest in op5: 
-                    return
+                    fight_again= input("-------\nWould you like to battle again or go to the shop?\n'Fight' to try again.)")
+                    op5=("Fight","fight","f","F","FIGHT")
+                    if fight_again in op5:
+                        print ("okay you decide to repeat")
+                        return 
+                    else:
+                        break
+
     fight()
+
+    ##MUST CALL THE FIGHT AGAIN *RETURN* AFTER FIGHT () 
+
+
