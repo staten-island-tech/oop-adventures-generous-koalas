@@ -18,8 +18,6 @@ class Inventory:
             print(f"{idx}. {item['name']}")
 
 
-
-
 class Hero:
     def __init__(self, name, health, damage, coins):
         self.name = name
@@ -27,7 +25,7 @@ class Hero:
         self.damage = damage
         self.coins = coins
         self.inventory = Inventory()
-
+ 
 
     def earn_coins(self, amount):
         self.coins += amount
@@ -62,8 +60,6 @@ class Hero:
 
     def display_inventory(self):
         self.inventory.display_inventory()
-
-
 
 
 class Merchant:
@@ -104,9 +100,6 @@ class Merchant:
             except ValueError:
                 print("Invalid input. Please enter a valid number.")
 
-
-
-
 class ZombieGame:
     def __init__(self):
         self.hero = Hero(name="Cornelius", health=100, damage=15, coins=25)
@@ -128,9 +121,5 @@ class ZombieGame:
         self.hero.display_inventory()
 
 
-
-
 game = ZombieGame()
 game.play()
-
-
