@@ -8,7 +8,7 @@ def start():
         import compstoryline
     if start == ("Band"):
         print("You are going to the band room")
-        import bandstoryline
+        import band
     if start == ("School Store"):
         print("you are now going to the school store!")
         import schoolstore

@@ -112,21 +112,13 @@ class p1():
                     v
                     print ("You got 15 coins from defeating this zombie!")
                     t = F.coins+15
-                    F.coins+15
-                    print (t)
+                    F.coins+15 
+                    print (t, "coins currently")
             if F.health<0:
                     print("You've died...")
                     print("ZOMBIE WINS.")
-                    fight_again= input("-------\nWould you like to battle again or go to the shop?\n'Fight' to try again.)")
-                    op5=("Fight","fight","f","F","FIGHT")
-                    if fight_again in op5:
-                        print ("okay you decide to repeat")
-                        return 
-                    else:
-                        break
-
+                    break
     fight()
-
     ##MUST CALL THE FIGHT AGAIN *RETURN* AFTER FIGHT () 
 
 
