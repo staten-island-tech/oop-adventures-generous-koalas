@@ -28,28 +28,24 @@ class Hero:
     def display_inventory(self):
         print(f"{self.name}'s Inventory: {self.inventory}")
 
-
 class Merchant:
+
     def __init__(self, items):
         self.items = items
-
 
     def display_items(self):
         print("Merchant: Welcome, adventurer! Take a look at my wares:")
         for idx, item in enumerate(self.items, start=1):
             print(f"{idx}. {item['name']} - Cost: {item['cost']} coins")
 
-
     def sell_item(self, hero):
         self.display_items()
         choice = input("Enter the number of the item you want to purchase (or '0' to exit): ")
-
 
         try:
             choice = int(choice)
             if 0 < choice <= len(self.items):
                 selected_item = self.items[choice - 1]
-
 
                 if hero.coins >= selected_item['cost']:
                     hero.coins -= selected_item['cost']
@@ -61,7 +57,6 @@ class Merchant:
                 print("Invalid choice. Please enter a valid number.")
         except ValueError:
             print("Invalid input. Please enter a valid number.")
-
 
         return None
 
