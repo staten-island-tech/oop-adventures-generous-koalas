@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Baby Zombie",
+        "health": "100",
+        "damage": "5"
+    },
+    {
+        "name": "Normal Zombie",
+        "health": "200",
+        "damage": "10"
+    },
+    {
+        "name": "Mama Zombie",
+        "health": "250",
+        "damage": "20"
+    },
+    {
+        "name": "moo",
+        "health": "moo",
+        "damage": "moo"
+    },
+    {
+        "name": "Cornelius",
+        "health": "200",
+        "damage": "15"
+    },
+    {
+        "name": "Cornelius",
+        "health": "200",
+        "damage": "15"
+    },
+    {
+        "name": "Cornelius",
+        "health": "200",
+        "damage": "15"
+    }
+]

@@ -1,4 +1,4 @@
-HEAD
+
 class Merchant:
     def __init__(self,name,coins,inventory): 
         self.name = name 
