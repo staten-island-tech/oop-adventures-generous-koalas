@@ -66,9 +66,6 @@ class Merchant:
         return None
 
 
-hero = Hero(name= "Blastoise" , health=200, damage=15, coins=50)
-
-
 inventory = [
     {"name": "Health Potion", "cost": 25},
     {"name": "Damage Potion", "cost": 25},
