@@ -1,22 +1,22 @@
+
 import random
 import time
-from attacks import Hero
-from attacks import Merchant
 
-inventory= []
 
 class Enemy():
     def __init__(self, name, health,damage,):
         self.name=name
         self.health=health
         self.damage=damage
-    
 
-y=("yes","yeah","y","Y","YES","Yes")
-n=("no","nah","n","N","NO","No")
-#Get classes in here,
-#figure out how to determine whether the user has potions to use during the moves which will also determine how many the times they can use the move (for potions)
-#need a certain multiplier for each attack and certain damages per weapons
+
+class Hero():
+    def __init__(self, name, health,damage, coins):
+        self.name=name
+        self.health=health
+        self.damage=damage
+        self.coins=coins
+
 
 fstart= ("You encounter a Zombie. FIGHT START.")
 movedesc=("1)Charged attack.[2x your normal damage, 1/2 recoil],2)normal attack[normal damage, no recoil], 3)damage potion[+30 damage], 4)health potion[+40 health]")
@@ -24,14 +24,15 @@ op1=("Good job! The zombie's hp dropped by 30, that hit hurt... -15 hp","You mis
 op2=("Nice!The zombie's hp dropped by 15!","You missed... the zombie bit you! -10hp")
 op3=("You used your damage potion! The zombie's hp dropped by 30!","Your damage potion fell out of your hands atleast you managed to dodge the zombie's attack....")
 op4=("You used your healing potion! +40 hp","Your potion fell out of your hands atleast you managed to dodge the zombie's attack....")
-op5=("Fight","fight","f","F","FIGHT")
+op5=("Fight")
 
-class p2():
-    def fight2():
+
+class p1():
+    def fight():
         print (fstart)
         print (movedesc)
         F=Hero("Blastoise",200,15,20)
-        D=Enemy("Baby Zombie",100,5)
+        D=Enemy("Zombie",200,10)
         print ("Fight commence. Get ready", F.name)
         dmg=F.damage
         zdmg=D.damage
@@ -56,6 +57,7 @@ class p2():
                     print("The zombie's health is",D.health)
                     v
 
+
             elif moveset=="2":
                 print (random.choice(op2))
                 if random.choice(op2) == ("Nice!The zombie's hp dropped by 15!"):
@@ -68,6 +70,7 @@ class p2():
                     v
                     print("Your health is....",F.health)
                     v  
+
 
             elif moveset=="3":
                 if random.choice(op3) == ("You used your damage potion! The zombie's hp dropped by 30!"):
@@ -86,6 +89,7 @@ class p2():
                     print("The zombie's health is",D.health)
                     v
 
+
             elif moveset=="4":
                 if random.choice(op4) == ("You used your healing potion! +40 hp"):
                     print("You used your healing potion! +40p!")
@@ -101,27 +105,27 @@ class p2():
                     print("Your health is....",F.health)
                     v  
                     print("The zombie's health is",D.health)
+            else:
+                if moveset!= ("4","3","2","1"):
+                    print ("That is not a valid option")
 
-            if D.health==0:
+
+            if D.health<=0:
                 print("The Zombie died...")
-                break
-
-            if D.health<0:
                 print("HERO WINS.")
                 v
-                print ("You got 15 coins from defeating this zombie!")
-                F.coins+15
-                print (F.coins)
-
-            if F.health==0:
+                print ("You got 25 coins from defeating this zombie!")
+                F.coins=int(F.coins)+25
+                print ("You have",F.coins,"coins.")
+                   
+            if F.health<=0:
                 print("You've died...")
-                break
-                    
-            if F.health<0:
                 print("ZOMBIE WINS.")
                 v
                 fight_again= input("-------\nWould you like to battle again or go to the shop?\n'Fight' to try again.)")
-                if fight_again in op5:
-                    return
-
-p2.fight2()
+                if fight_again == op5:
+                    return(p1)
+                else:
+                    if op5 not in fight_again:
+                        print ("Invalid.")
+p1.fight()
