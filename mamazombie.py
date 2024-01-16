@@ -1,6 +1,9 @@
 
+
 import random
 import time
+
+
 
 
 class Enemy():
@@ -8,6 +11,8 @@ class Enemy():
         self.name=name
         self.health=health
         self.damage=damage
+
+
 
 
 class Hero():
@@ -18,6 +23,8 @@ class Hero():
         self.coins=coins
 
 
+
+
 fstart= ("You encounter a Zombie. FIGHT START.")
 movedesc=("1)Charged attack.[2x your normal damage, 1/2 recoil],2)normal attack[normal damage, no recoil], 3)damage potion[+30 damage], 4)health potion[+40 health]")
 op1=("Good job! The zombie's hp dropped by 30, that hit hurt... -15 hp","You missed and the zombie attacked twice!!-20hp")
@@ -25,6 +32,8 @@ op2=("Nice!The zombie's hp dropped by 15!","You missed... the zombie bit you! -1
 op3=("You used your damage potion! The zombie's hp dropped by 30!","Your damage potion fell out of your hands atleast you managed to dodge the zombie's attack....")
 op4=("You used your healing potion! +40 hp","Your potion fell out of your hands atleast you managed to dodge the zombie's attack....")
 op5=("Fight")
+
+
 
 
 class p3():
@@ -58,6 +67,8 @@ class p3():
                     v
 
 
+
+
             elif moveset=="2":
                 print (random.choice(op2))
                 if random.choice(op2) == ("Nice!The zombie's hp dropped by 15!"):
@@ -70,6 +81,8 @@ class p3():
                     v
                     print("Your health is....",F.health)
                     v  
+
+
 
 
             elif moveset=="3":
@@ -88,6 +101,8 @@ class p3():
                     v  
                     print("The zombie's health is",D.health)
                     v
+
+
 
 
             elif moveset=="4":
@@ -110,14 +125,18 @@ class p3():
                     print ("That is not a valid option")
 
 
+
+
             if D.health<=0:
                 print("The Zombie died...")
                 print("HERO WINS.")
                 v
                 print ("You got 50 coins from defeating this zombie!")
                 print ("You've made it onto the roof. ")
-                F.coins=int(F.coins)+50  n      
+                F.coins=int(F.coins)+50  
                 print ("You have",F.coins,"coins.")
+
+
 
 
             if F.health<=0:
@@ -126,10 +145,14 @@ class p3():
                 v
                 fight_again= input("-------\nWould you like to battle again or go to the shop?\n'Fight' to try again.)")
                 if fight_again == op5:
-                    return(p1)
+                    return(p3)
                 else:
                     if op5 not in fight_again:
                         print ("Invalid.")
 
 
+
+
 p3.fight3()
+
+
