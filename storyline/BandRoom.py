@@ -12,14 +12,14 @@ if start == 'fight':
 print("you have decided to charge him. If you use this, you must have 1 or 'Charged Attack' as your first fighting choice! Good luck!!")
 weapon = input("But wait! You can choose a weapon if you'd like! You can choose a Dull pencil, Sharp pencil, Heavy backpack, Troika Book, Opened Paper Clip, and Safety Scissors. \n type 'D' for dull pencil \n type 'S' for sharp pencil,\n type 'B' for heavy backpack,\n type 'T' for the troika book, type 'O' for the opened paper clip \n type 'SS' for the safety scissors. \n If you'd like to fight with your fist, type none") 
 if weapon == "none": 
-  import babyzombie
+  import babyzombie.py
 if weapon == "D":
-  import babydullpencil
+  import babydullpencil.py
 if weapon == "S":
-  import babyzombiesharpened
+  import babyzombiesharpened.py
 if weapon == "B":
-  import heavybackpack
+  import heavybackpack.py
 if weapon == "O":
-  import openedpaperclip 
-if weapon == "SS" : 
-  import safetyscissors 
+  import openedpaperclip.py
+if weapon == "SS" :
+  import safetyscissors.py
