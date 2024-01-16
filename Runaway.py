@@ -12,6 +12,4 @@ schoolstoreleave = print (" great ! now you have all the weapons/potions you nee
 hallway2 = input(”As you start walking towards the band room’s door you realized that it is cracked open. press Enter to continue.”) 
 introtofight = print(”you crept in, and see a zombie, probably the same one from earlier, rummaging around the room, groaning. \n you have two hiding places. Where would you like to hide? Type “1” for the flute cabinet, Type “2” for the behind the bass drum.")
 if introtofight == "1":
-  print("you crept in, and see zombie, probably the same one from earlier, rummaging around the room, groaning. \n You have two hiding places. Where would you like to hide? Type 
-"1" for the flute cabinet, Type "2" for the behind the bass drum") 
-  
+  print("You quickly tip toe to the flute cabinet, crouch and bring your knees close to your chest \n The zombie begins sniffing around
