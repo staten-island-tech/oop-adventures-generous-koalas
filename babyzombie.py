@@ -1,5 +1,4 @@
 
-
 import random
 import time
 
@@ -28,12 +27,12 @@ op4=("You used your healing potion! +40 hp","Your potion fell out of your hands 
 op5=("Fight")
 
 
-class p1():
-    def fight():
+class p2():
+    def fight2():
         print (fstart)
         print (movedesc)
         F=Hero("Blastoise",200,15,20)
-        D=Enemy("Zombie",200,10)
+        D=Enemy("Baby Zombie",100,5)
         print ("Fight commence. Get ready", F.name)
         dmg=F.damage
         zdmg=D.damage
@@ -115,10 +114,11 @@ class p1():
                 print("The Zombie died...")
                 print("HERO WINS.")
                 v
-                print ("You got 25 coins from defeating this zombie!")
-                F.coins=int(F.coins)+25
+                print ("You got 15 coins from defeating this zombie!")
+                F.coins=int(F.coins)+15
                 print ("You have",F.coins,"coins.")
-                   
+
+
             if F.health<=0:
                 print("You've died...")
                 print("ZOMBIE WINS.")
@@ -129,9 +129,4 @@ class p1():
                 else:
                     if op5 not in fight_again:
                         print ("Invalid.")
-
-
-p1.fight()
-
-import random
-import time
+p2.fight2()
