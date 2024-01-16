@@ -10,10 +10,36 @@ if thisorthat == ("Computer"):
       if wonorlose == 'L':
             x = input("you know you can redo the fight? \n type Yes if you'd like to redo it. Type No is not.")
             if x == 'Yes': 
-                  import fight1
+                  weapon = input("But wait! You can choose a weapon if you'd like! You can choose a Dull pencil, Sharp pencil, Heavy backpack, Troika Book, Opened Paper Clip, and Safety Scissors. \n type 'D' for dull pencil \n type 'S' for sharp pencil,\n type 'B' for heavy backpack,\n type 'T' for the troika book, type 'O' for the opened paper clip \n type 'SS' for the safety scissors. \n If you'd like to fight with your fist, type none") 
+                  if weapon == "none": 
+                        import babyzombie
+                  if weapon == "D":
+                        import babydullpencil
+                  if weapon == "S":
+                        import babyzombiesharpened
+                  if weapon == "B":
+                        import heavybackpack
+                  if weapon == "O":
+                        import openedpaperclip 
+                  if weapon == "SS" : 
+                        import safetyscissors 
+                  after = input ("If you won, great!! Now you are on level 2! Lets go!") 
 if thisorthat == ("Back"):
-     import af2
-else:
-      print("Im sorry but you are leaving the room...let's go to the store!")
+           weapon = input("But wait! You can choose a weapon if you'd like! You can choose a Dull pencil, Sharp pencil, Heavy backpack, Troika Book, Opened Paper Clip, and Safety Scissors. \n type 'D' for dull pencil \n type 'S' for sharp pencil,\n type 'B' for heavy backpack,\n type 'T' for the troika book, type 'O' for the opened paper clip \n type 'SS' for the safety scissors. \n If you'd like to fight with your fist, type none") 
+                  if weapon == "none": 
+                        import babyzombie
+                  if weapon == "D":
+                        import babydullpencil
+                  if weapon == "S":
+                        import babyzombiesharpened
+                  if weapon == "B":
+                        import heavybackpack
+                  if weapon == "O":
+                        import openedpaperclip 
+                  if weapon == "SS" : 
+                        import safetyscissors 
+
+else: 
+print("Im sorry but you are leaving the room...let's go to the store!")
       import schoolstore
 specific_storyline() 
