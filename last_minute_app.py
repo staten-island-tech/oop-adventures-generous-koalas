@@ -58,4 +58,5 @@ elif pl=="HEAVYBACKPACK":
     p20
     p19
     p21
-
+else: 
+    print("Invalid") 
