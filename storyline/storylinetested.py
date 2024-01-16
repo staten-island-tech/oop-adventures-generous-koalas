@@ -13,5 +13,5 @@ def start():
         import Bandroom.py
     elif:
         print ("you are going to the so store")
-        import merchant.py
+        import sostore.py
 # make a class that represents the so store, and the choices they can make. 
