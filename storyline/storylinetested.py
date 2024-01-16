@@ -2,16 +2,18 @@ def start():
     a = input("Welcome to *Game Title*!! Lets begin. Press Enter to Continue") 
     b = input("Hello! You are a student in Staten Island Technical High School and you are attempting to survive the zombie apocalypse.")
     c = input ("The goal is to get to Staten Island Techincal high School's roof, where the rescue point is. You will start in Level 1, in the basement. Be careful!") 
-    start = input("Your chemistry teacher's alarm rings, indicating that tutoring sess is over! You begin to get up. Do you want to go to the Comp Sci room or SO Store")
-    BeginningA = ["So store", "school store", "School Store", "Snack Store"]
-    BeginningB = ["Computer Sci Room", "Comp Sci room", "Comp Sci", "comp sci", "Mr whalen's room"]
-    if start in BeginningB:
-        print ("you are now in the computer science room, what would you like to do?")
-        import CompSCi.py
-    if start in BeginningC:
-        print ("you are now in the band room") 
-        import Bandroom.py
-    elif:
-        print ("you are going to the so store")
-        import sostore.py
-# make a class that represents the so store, and the choices they can make. 
+    start = input("Your chemistry teacher's alarm rings, indicating that tutoring sess is over! You begin to get up, and go to the basement. Type Band if you'd like to go to Band, or type CompSci to go to Mr Whalen's room or to buy things, type in School Store") 
+    if start == ("CompSci"):
+        print("You are going to the computer science room")
+        import compstoryline
+    if start == ("Band"):
+        print("You are going to the band room")
+        import band
+    if start == ("School Store"):
+        print("you are now going to the school store!")
+        import schoolstore
+    else:
+        ("since you didn't type anything else, you get to go to the school store")
+        import schoolstore
+
+start()
