@@ -21,12 +21,4 @@ class level3():
       import safetyscissors.py
 lvl3()
 
-class ending():
-  def end():
-    print("You now have the key! LETS GO!") 
-    a = input("You open the doors to staircase I and run up the stairs. Once you are at the 3rd floor, you get the key and open the door! Press ENTER to continue!") 
-    goodending = input("You are met with two policemen and a helicopter, ready to take you to safety! Press ENTER to continue!") 
-    final = input("GREAT JOB! YOU SUCCESSFULLY LIVED THROUGH THE APOCALYPSE! I GET TO SLEEP AND YOU GET TO BE SAFE! WOOHOO!!") 
-
-break 
 
