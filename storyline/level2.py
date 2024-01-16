@@ -20,4 +20,11 @@ def Secondfloor():
     import  safetyscissors2.py
 Secondfloor() 
     
-  
+
+
+def level3():
+    win = input("Did you win? Please be honest! Type 'Yes' if you did, Type 'No' if not.") 
+if win == 'Yes':
+    import level3.py 
+if win == 'No':
+    print("You can restart the fight! If not then...game over :( ") 
