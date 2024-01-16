@@ -15,5 +15,11 @@ def start():
     else:
         ("since you didn't type anything else, you get to go to the school store")
         import schoolstore
-
 start()
+
+def level2():
+    win = input("Did you win? Please be honest! Type 'Yes' if you did, Type 'No' if not.") 
+if win == 'Yes':
+    import level2.py 
+if win == 'No':
+    print("You can restart the fight! If not then...game over :( ") 
