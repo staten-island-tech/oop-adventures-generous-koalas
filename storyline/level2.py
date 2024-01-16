@@ -18,5 +18,6 @@ def Secondfloor():
     import openedpaperclip2.py
   if weapon == "SS" : 
     import  safetyscissors2.py
+Secondfloor() 
     
   
